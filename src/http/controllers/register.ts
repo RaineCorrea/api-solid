@@ -19,7 +19,7 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
     });
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
-    return reply.status(400).send();
+    return reply.status(409).send();
   }
 
   return reply.status(201).send();
